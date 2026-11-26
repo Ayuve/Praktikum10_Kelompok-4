@@ -14,18 +14,44 @@ https://youtu.be/...
 https://www.kaggle.com/datasets/joydippaul/mpox-skin-lesion-dataset-version-20-msld-v20
 
 ## Hasil (Rata-rata 5 Fold)
-| Metrik | Dengan augmentasi | Tanpa augmentasi |
-|---|---|---|
-| Accuracy | ... | ... |
-| Precision | ... | ... |
-| Recall | ... | ... |
-| F1-score | ... | ... |
-| ROC-AUC | ... | ... |
+| Metrik | Dengan augmentasi | Tanpa augmentasi | Selisih |
+|---|---|---|---|
+| Accuracy | 0.482 | 0.412 | +0.070 |
+| Precision | 0.440 | 0.342 | +0.099 |
+| Recall | 0.482 | 0.412 | +0.070 |
+| F1-score | 0.435 | 0.319 | +0.116 |
+| ROC-AUC | 0.763 | 0.729 | +0.034 |
 
-## Gambar
+## Gambar 
 ![Ukuran gambar](cek_ukuran.png)
+
+### Kurva loss, dengan augmentasi
 ![Loss fold 1](hasil_dengan_aug/training_fold1.png)
+![Loss fold 2](hasil_dengan_aug/training_fold2.png)
+![Loss fold 3](hasil_dengan_aug/training_fold3.png)
+![Loss fold 4](hasil_dengan_aug/training_fold4.png)
+![Loss fold 5](hasil_dengan_aug/training_fold5.png)
+
+### Kurva loss, tanpa augmentasi
+![Loss fold 1](hasil_tanpa_aug/training_fold1.png)
+![Loss fold 2](hasil_tanpa_aug/training_fold2.png)
+![Loss fold 3](hasil_tanpa_aug/training_fold3.png)
+![Loss fold 4](hasil_tanpa_aug/training_fold4.png)
+![Loss fold 5](hasil_tanpa_aug/training_fold5.png)
+
+### Confusion matrix, dengan augmentasi
 ![Confusion matrix fold 1](hasil_dengan_aug/confusion_matrix_fold1.png)
+![Confusion matrix fold 2](hasil_dengan_aug/confusion_matrix_fold2.png)
+![Confusion matrix fold 3](hasil_dengan_aug/confusion_matrix_fold3.png)
+![Confusion matrix fold 4](hasil_dengan_aug/confusion_matrix_fold4.png)
+![Confusion matrix fold 5](hasil_dengan_aug/confusion_matrix_fold5.png)
+
+### Confusion matrix, tanpa augmentasi
+![Confusion matrix fold 1](hasil_tanpa_aug/confusion_matrix_fold1.png)
+![Confusion matrix fold 2](hasil_tanpa_aug/confusion_matrix_fold2.png)
+![Confusion matrix fold 3](hasil_tanpa_aug/confusion_matrix_fold3.png)
+![Confusion matrix fold 4](hasil_tanpa_aug/confusion_matrix_fold4.png)
+![Confusion matrix fold 5](hasil_tanpa_aug/confusion_matrix_fold5.png)
 
 ## Jawaban Pertanyaan
 1. **Apakah data augmentasi membantu? Tunjukkan dengan angka rata-rata dari kedua percobaan.**
