@@ -49,3 +49,15 @@ def uji_satu_fold(k):
         "roc_auc": roc_auc_score(ground_truth, peluang, multi_class='ovr', average='weighted',
                                  labels=range(JUMLAH_KELAS)),
     }
+ 
+ 
+def main():
+    hasil = pd.DataFrame([uji_satu_fold(k) for k in FOLDS]).set_index("fold")
+    hasil.loc["rata-rata"] = hasil.mean()
+    hasil.loc["simpangan"] = hasil.iloc[:-1].std()
+    print(hasil.round(3))
+    hasil.round(4).to_csv("hasil_5fold.csv")
+ 
+ 
+if __name__ == "__main__":
+    main()
